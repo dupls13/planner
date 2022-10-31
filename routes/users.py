@@ -16,6 +16,8 @@ async def sign_new_user(data: User) -> dict:
         )
         
     users[data.email] = data
+    
+    
     return {
         "message": "User successfully registered"
     }
